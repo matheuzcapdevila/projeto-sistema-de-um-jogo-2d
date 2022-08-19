@@ -3,7 +3,7 @@ Projeto de um sistema de um jogo 2d com site e banco de dados utilizando Pygame,
 
 
 
-# Sprite license
+Sprite license:
 
 They are released under the Creative Commons Zero (CC0) license.
 
