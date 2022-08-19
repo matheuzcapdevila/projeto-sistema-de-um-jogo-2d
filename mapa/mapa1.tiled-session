@@ -1,0 +1,35 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "floor.tsx": {
+            "dynamicWrapping": false
+        },
+        "logic.tsx": {
+            "dynamicWrapping": true
+        },
+        "nature.tsx": {
+            "dynamicWrapping": true
+        }
+    },
+    "last.exportedFilePath": "C:/Users/Matheus/Desktop/SENAI TCS/ProjetoSenai/mapa",
+    "last.imagePath": "C:/Users/Matheus/Desktop/SENAI TCS/ProjetoSenai/imagens/TilesetLogic",
+    "map.height": 60,
+    "map.lastUsedExportFilter": "Arquivos CSV (*.csv)",
+    "map.lastUsedFormat": "tmx",
+    "map.tileHeight": 64,
+    "map.tileWidth": 64,
+    "map.width": 60,
+    "openFiles": [
+    ],
+    "project": "mapa1.tiled-project",
+    "recentFiles": [
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 1
+}

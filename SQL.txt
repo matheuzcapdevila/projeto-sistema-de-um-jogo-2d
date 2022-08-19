@@ -1,0 +1,11 @@
+CREATE TABLE Player (
+    ID int,
+    Name varchar(100),
+    Roupa varchar(100),
+    Posicao int
+);
+INSERT INTO Player VALUES (1, 'Hey', 'knight', 2000);
+INSERT INTO Player VALUES (2, 'Juvia', 'girl', 2200);
+INSERT INTO Player VALUES (3, 'Ia', 'cave girl', 1800);
+
+select * from player
