@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.9" tiledversion="1.9.1" name="nature" tilewidth="64" tileheight="64" tilecount="52" columns="0">
+<tileset version="1.9" tiledversion="1.9.1" name="nature" tilewidth="64" tileheight="192" tilecount="54" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="56">
   <image width="64" height="64" source="../imagens/TilesetNature/nature_000.png"/>
@@ -156,5 +156,11 @@
  </tile>
  <tile id="107">
   <image width="64" height="64" source="../imagens/TilesetNature/nature_046.png"/>
+ </tile>
+ <tile id="110">
+  <image width="64" height="192" source="../imagens/arvores/110.png"/>
+ </tile>
+ <tile id="111">
+  <image width="64" height="192" source="../imagens/arvores/111.png"/>
  </tile>
 </tileset>

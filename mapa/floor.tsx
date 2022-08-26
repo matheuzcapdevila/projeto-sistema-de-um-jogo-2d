@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.9" tiledversion="1.9.1" name="floor" tilewidth="64" tileheight="64" tilecount="110" columns="0">
+<tileset version="1.9" tiledversion="1.9.1" name="floor" tilewidth="64" tileheight="64" tilecount="115" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="64" height="64" source="../imagens/TilesetWater/floor_000.png"/>
@@ -330,5 +330,20 @@
  </tile>
  <tile id="109">
   <image width="64" height="64" source="../imagens/TilesetWater/floor_109.png"/>
+ </tile>
+ <tile id="110">
+  <image width="64" height="64" source="../imagens/New Piskel-1.png.png"/>
+ </tile>
+ <tile id="111">
+  <image width="64" height="64" source="../imagens/New Piskel-1.png (1).png"/>
+ </tile>
+ <tile id="112">
+  <image width="64" height="64" source="../imagens/New Piskel-1.png.png"/>
+ </tile>
+ <tile id="113">
+  <image width="64" height="64" source="../imagens/New Piskel-1.png (2).png"/>
+ </tile>
+ <tile id="114">
+  <image width="64" height="64" source="../imagens/New Piskel-1.png.png"/>
  </tile>
 </tileset>

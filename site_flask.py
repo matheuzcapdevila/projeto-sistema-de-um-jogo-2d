@@ -5,10 +5,10 @@ import pymysql
 site_flask = Flask(__name__)
 
 def connection():
-    s = '' #Digitar o server(host) name
+    s = 'localhost' #Your server(host) name
     d = 'game'
-    u = '' #Digitar login user
-    p = '' #Digitar o password
+    u = 'root' #Your login user
+    p = '1234' #Your login password
     conn = pymysql.connect(host=s, user=u, password=p, database=d)
     return conn
 
