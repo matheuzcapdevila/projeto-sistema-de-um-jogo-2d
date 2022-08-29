@@ -18,27 +18,38 @@ cursor = conn.cursor()
 cursor.execute("SELECT roupa FROM Player where name = 'Kor'")
 
 class Player(pygame.sprite.Sprite):
-    def __init__(self, pos,groups, obstacle_sprites, create_attack): # posição e sprite group a qual pertence
+    def __init__(self, pos,groups, obstacle_sprites, create_attack, destroy_attack): # posição e sprite group a qual pertence
         super().__init__(groups)
         self.image = pygame.image.load(f'imagens/jogador/knight/down_idle/idle_down.png').convert_alpha()
         self.rect = self.image.get_rect(topleft = pos)
         self.hitbox = self.rect.inflate(0, -26) # Faz com que se retire -13 superior e inferior da colisão
         print("player", self.hitbox.centery)
-        self.direction = pygame.math.Vector2()
-        self.speed = 5
+
         conn.close()
         #self.walk_sand = pygame.mixer.Sound("sounds/sand_step2.mp3")
-        self.attacking = False
-        self.attack_cooldown = 400
-        self.attack_time =  None
-        self.frame_index = 0
-        self.animation_speed = 0.15
-        self.obstacle_sprites = obstacle_sprites
+
+
+
         # graphics setup
         self.import_player_assets()
         self.status = 'down'
-        self.create_attack = create_attack
+        self.frame_index = 0
+        self.animation_speed = 0.15
 
+        # graphics
+        self.create_attack = create_attack
+        self.attacking = False
+        self.attack_cooldown = 400
+        self.attack_time = None
+        self.obstacle_sprites = obstacle_sprites
+        self.direction = pygame.math.Vector2()
+        self.speed = 5
+
+        #weapon
+        self.create_attack = create_attack
+        self.destroy_attack = destroy_attack
+        self.weapon_index = 0
+        self.weapon = list(weapon_data.keys())[self.weapon_index]
 
     def import_player_assets(self):
         character_path = (f'imagens/jogador/knight/')
@@ -126,6 +137,7 @@ class Player(pygame.sprite.Sprite):
         if self.attacking:
             if current_time - self.attack_time >= self.attack_cooldown:
                 self.attacking = False
+                self.destroy_attack()
 
     def animate(self):
         animation = self.animations[self.status]
